@@ -1,0 +1,274 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "71421bf7-a991-474a-9aad-6298c606dea8",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "scores = {\"virat\":90, \"rohit\":100,\"rahul\":70,\"Hardit\":9,\"gill\":20,\"jedeja\":50,\"siraz\":15,\"Rahane\":45}"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "id": "f5a467cb-39fc-4460-8c57-e2f8cae03272",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'virat': 90,\n",
+       " 'rohit': 100,\n",
+       " 'rahul': 70,\n",
+       " 'Hardit': 9,\n",
+       " 'gill': 20,\n",
+       " 'jedeja': 110,\n",
+       " 'siraz': 15,\n",
+       " 'Aswin': 15,\n",
+       " 'Rahane': 45}"
+      ]
+     },
+     "execution_count": 29,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "scores.update({\"jedeja\":110})\n",
+    "scores"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 31,
+   "id": "0981f1fc-c960-43a6-940c-0badb043c624",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'virat': 90,\n",
+       " 'rohit': 100,\n",
+       " 'rahul': 70,\n",
+       " 'Hardit': 9,\n",
+       " 'gill': 20,\n",
+       " 'jedeja': 110,\n",
+       " 'siraz': 15,\n",
+       " 'Aswin': 15,\n",
+       " 'Rahane': 45}"
+      ]
+     },
+     "execution_count": 31,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "scores.setdefault(\"rahul\",60)\n",
+    "scores"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 33,
+   "id": "8966a83a-f77f-4585-a7c6-1e32187ad57b",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'virat': 90,\n",
+       " 'rohit': 100,\n",
+       " 'rahul': 70,\n",
+       " 'Hardit': 9,\n",
+       " 'gill': 20,\n",
+       " 'jedeja': 110,\n",
+       " 'siraz': 15,\n",
+       " 'Aswin': 15}"
+      ]
+     },
+     "execution_count": 33,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "scores.popitem()\n",
+    "scores"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 43,
+   "id": "10b56e4d-2e26-4426-bd2a-cc7ee02ac859",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "70"
+      ]
+     },
+     "execution_count": 43,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "scores.get(\"rahul\")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 45,
+   "id": "320c57ba-388a-4453-a7d5-132da3a4dfe3",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'A': None, 'B': None, 'C': None, 'D': None}"
+      ]
+     },
+     "execution_count": 45,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "list1 = [\"A\",\"B\",\"C\",\"D\"]\n",
+    "my_dict =dict.fromkeys(list1)\n",
+    "my_dict"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 47,
+   "id": "1bfa551f-906f-44c8-8a46-3757327afbf9",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'A': 20, 'B': 20, 'C': 20, 'D': 20}"
+      ]
+     },
+     "execution_count": 47,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "my_dict =dict.fromkeys(list1,20)\n",
+    "my_dict"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 49,
+   "id": "f6aafd51-8aa1-4f6d-a02a-c22855d43bf8",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'A': 20, 'B': 30, 'C': 20, 'D': 20}"
+      ]
+     },
+     "execution_count": 49,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "my_dict.update({\"A\":20,\"B\":30})\n",
+    "my_dict"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 53,
+   "id": "0c8fb6f9-e9a2-40f4-93a1-35ec91e2f917",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'virat': 90,\n",
+       " 'rohit': 100,\n",
+       " 'rahul': 70,\n",
+       " 'Hardit': 9,\n",
+       " 'gill': 20,\n",
+       " 'jedeja': 110,\n",
+       " 'siraz': 15,\n",
+       " 'Aswin': 15}"
+      ]
+     },
+     "execution_count": 53,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "for k in scores.keys():\n",
+    "    if k == \"hardit\":\n",
+    "        scores[k]=19\n",
+    "scores"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 69,
+   "id": "8ac80591-f2ce-4848-b52e-b645064f1cf7",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[90, 100, 70, 9, 20, 110, 15, 15]\n",
+      "Total Score:  429\n"
+     ]
+    }
+   ],
+   "source": [
+    "scores_list = []\n",
+    "for v in scores.values():\n",
+    "    scores_list.append(v)\n",
+    "print(scores_list)\n",
+    "print(\"Total Score: \", sum(scores_list))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "d69ceb32-5a23-4989-af10-6d7149dbfc3c",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python [conda env:MEmu Download]",
+   "language": "python",
+   "name": "conda-env-MEmu_Download-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
